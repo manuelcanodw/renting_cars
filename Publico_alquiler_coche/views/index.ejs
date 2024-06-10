@@ -1,0 +1,56 @@
+
+<%- include(`template/head.ejs`) %>
+<header class="container my-4">
+    <h1 class="text-center">ALQUILANDOLO</h1>
+</header>
+    <nav>
+        <ul>
+            <% tipos.forEach(function(modelo) { %>
+                <li><a href="/<%= modelo.tipo %>"><%= modelo.tipo %></a></li>
+            <% }); %>
+        </ul>
+    </nav>
+    <main class="container-sm">
+        <div>
+            <h2>BIENVENIDOS  A   ALQUILANDOLO</h2>
+            <p>
+               En Alquilandolo, te ofrecemos una experiencia de alquiler de coches que combina comodidad, calidad y placer, ideal para viajes familiares o individuales.
+            </p>
+
+            <div class="div_ruta_raiz">
+
+                <p>
+                    <h3>Comodidad a Tu Alcance</h3>
+                    Nuestro proceso de alquiler es sencillo y rápido, con opciones de reserva en línea y atención al cliente 24/7. Elige entre una amplia variedad de vehículos modernos y bien mantenidos que se adaptan a tus necesidades.
+
+                </p>
+
+                <p>
+                    <h3> Calidad en Cada Detalle</h3>
+                
+                    Nuestros coches pasan por estrictos controles de calidad para garantizar seguridad y fiabilidad. Ofrecemos desde coches compactos hasta lujosos sedanes y SUVs, todos equipados con las últimas comodidades.
+                </p>
+
+                <p>
+                <h3> Placer Familiar e Individual</h3> 
+                
+                    Ya sea para una escapada, unas vacaciones familiares o un viaje de negocios, tenemos el coche perfecto para ti. Disfruta de la comodidad y el placer de conducir con nosotros.
+                </p>
+
+            </div>
+
+            <p>
+                
+                <h3>Por Qué Elegirnos</h3>
+                Atención Personalizada: Te asistimos en cada paso del camino.
+                Precios Competitivos: Tarifas transparentes y ajustadas a tu presupuesto.
+                Ubicaciones Convenientes: Múltiples centros de alquiler para tu conveniencia.
+                Explora nuestro sitio web, selecciona tu vehículo y comienza tu viaje con [Nombre de la Empresa] hoy mismo. ¡Crea recuerdos inolvidables con nosotros!
+            </p>
+           
+        </div>
+    </main>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3/dist/umd/simple-datatables.min.js"></script>
+    <script src="js/script.js"></script> -->
+</body>
+</html>

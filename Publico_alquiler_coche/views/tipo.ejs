@@ -1,0 +1,48 @@
+<%- include('template/head.ejs') %>
+
+    <body>
+        <header class="container my-4">
+            <h1 class="text-center">Coches por tipo</h1>
+        </header>
+
+
+        <main class="container-sm">
+            <div>
+                <% if (data1 && data1.length> 0) { %>
+                    <% data1.forEach(function(modelo) { %>
+                        <a href="../img/<%= modelo.nombre_modelo %>"  class="quitar">
+                        <div class="card">
+                            <h2>
+                                <%= modelo.nombre_modelo %>
+                            </h2>
+                            <p>Unidades Totales: <%= modelo.unidades_totales %>
+                            </p>
+                            <p>Unidades Alquiladas: <%= modelo.unidades_alquiladas %>
+                            </p>
+                            <p>Personas: <%= modelo.personas %>
+                            </p>
+                            <p>Puertas: <%= modelo.puertas %>
+                            </p>
+                            <p>Cambio: <%= modelo.cambio %>
+                            </p>
+                            <p>Maletas: <%= modelo.maletas %>
+                            </p>
+                            <p>Precio por Día: $<%= modelo.precioDia %>
+                            </p>
+                            <div>
+                                <img src="../img/Fiat 500 Cabrio.webp"
+                                    alt="tipo.ejs <%= modelo.nombre_modelo %>">
+                            </div>
+                        </div>
+                    </a>
+                        <% }); %>
+                            <% } else { %>
+                                <p>No hay modelos disponibles para este tipo.</p>
+                                <% } %>
+            </div>
+        </main>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3/dist/umd/simple-datatables.min.js"></script>
+    <script src="js/script.js"></script> -->
+    </body>
+
+    </html>

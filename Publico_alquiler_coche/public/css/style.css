@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    text-align: start;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: rgba(95, 53, 53, 0.833);
+}
+
+nav > ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+}
+
+ul > li {
+    list-style: none;
+    padding : .5rem;
+}
+
+li > a {
+    color: #fff;
+    font-size: 1.5rem;
+}
